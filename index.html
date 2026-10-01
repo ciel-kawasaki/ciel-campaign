@@ -13,9 +13,20 @@
 .contact{text-align:center;background:#fff}.tel{display:block;color:var(--red);text-decoration:none;font-weight:900;font-size:clamp(39px,6vw,57px)}footer{text-align:center;padding:26px;color:#62778d;font-size:13px}
 @media(max-width:760px){.netflow,.uses,.cash{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.sub{text-align:left}.hero{padding-top:45px}}
 
-.fixed-service-panel{width:100%;max-width:1255px;margin:0 auto;border-radius:0;overflow:hidden}
-.fixed-service-panel img{display:block;width:100%;height:auto;object-fit:contain}
-@media(max-width:760px){.fixed-service-panel{overflow-x:auto}.fixed-service-panel img{min-width:760px}}
+.brand-section{padding:52px 0;background:#eef7ff}
+.brand-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.brand-card{background:#fff;border:1px solid #d5e0eb;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(18,61,107,.08)}
+.brand-head{padding:15px 18px;color:#fff;font-weight:900;font-size:20px;white-space:nowrap}
+.net .brand-head{background:#147cc3}.elec .brand-head{background:#ff7818}.gas .brand-head{background:#178d34}.water .brand-head{background:#2392c2}
+.brand-body{padding:15px 20px;min-height:410px}
+.brand-clean{height:58px;display:flex;align-items:center;justify-content:flex-start;border-bottom:1px dotted #cbd6df;font-weight:900;font-size:20px;letter-spacing:-.02em;color:#172b3f;white-space:nowrap;overflow:visible}
+.brand-clean:last-child{border-bottom:0}
+.net .brand-clean:nth-child(1){font-size:19px}.net .brand-clean:nth-child(2){font-size:25px}.net .brand-clean:nth-child(3){font-size:24px}
+.net .brand-clean:nth-child(4){font-size:21px;color:#1261a0}.net .brand-clean:nth-child(5){font-size:23px}.net .brand-clean:nth-child(6){font-size:25px;color:#e34a20}
+.elec .brand-clean:nth-child(1){font-size:25px;color:#d71920}.elec .brand-clean:nth-child(4){font-size:24px;color:#e65b20}.elec .brand-clean:nth-child(6){font-size:22px;color:#e96822}
+.gas .brand-clean{font-size:21px}.water .brand-clean{justify-content:center;text-align:center}
+@media(max-width:900px){.brand-grid{grid-template-columns:1fr 1fr}.brand-body{min-height:auto}}
+@media(max-width:560px){.brand-grid{grid-template-columns:1fr}.brand-body{min-height:auto}.brand-clean{font-size:19px}}
 </style></head><body>
 <section class="hero"><div class="wrap"><span class="pill">シエル川崎店 ご成約者様限定</span><h1>新居のネット回線、<br><span class="red">物件に合わせて選べます。</span></h1><p class="lead">「この部屋ではどの回線が使える？」から確認。<br>ご希望の通信速度や使い方に合わせて、利用可能なインターネット回線をご提案します。</p></div></section>
 
@@ -25,13 +36,9 @@
 <section class="use"><div class="wrap"><h2 class="title">使い方に合わせてご相談できます</h2><div class="uses"><div class="usecard"><div class="e">🎬</div><b>動画・SNS中心</b><span>日常利用に合った通信環境を相談</span></div><div class="usecard"><div class="e">💻</div><b>在宅ワーク・オンライン会議</b><span>速度だけでなく安定性も重視</span></div><div class="usecard"><div class="e">🎮</div><b>オンラインゲーム・配信</b><span>高速通信・低遅延を重視して相談</span></div></div>
 <div class="life-bridge"><h3>さらに、電気・ガスなどのライフラインもまとめて。</h3><p>ネット回線だけでなく、新生活に必要な電気・ガス・ウォーターサーバーなどもあわせてご案内します。</p></div></div></section>
 
-<section class="partners"><div class="wrap">
-<h2 class="title">ご案内可能なサービス</h2>
-<p class="sub">インターネット回線をメインに、電気・ガスなど各種ライフラインをご案内します。</p>
-<div class="fixed-service-panel">
-<img src="images/target-services-fixed.jpg" alt="対象サービス一覧">
-</div>
-</div></section>
+<section class="brand-section"><div class="wrap"><h2 class="title">対象サービス</h2>
+<p class="sub">下記の提携サービスのお申込みで、キャッシュバックの対象となります。</p>
+<div class="brand-grid"><div class="brand-card net"><div class="brand-head">🌐 インターネット</div><div class="brand-body"><div class="brand-clean">SoftBank 光 / Air</div><div class="brand-clean">auひかり</div><div class="brand-clean">ドコモ光</div><div class="brand-clean">BIGLOBE光</div><div class="brand-clean">@nifty光</div><div class="brand-clean">J:COM</div></div></div><div class="brand-card elec"><div class="brand-head">💡 電気</div><div class="brand-body"><div class="brand-clean">東京電力</div><div class="brand-clean">関西電力</div><div class="brand-clean">Kuracyでんき</div><div class="brand-clean">auでんき</div><div class="brand-clean">HTBエナジー</div><div class="brand-clean">Looopでんき</div><div class="brand-clean">オクトパスエナジー</div></div></div><div class="brand-card gas"><div class="brand-head">🔥 ガス</div><div class="brand-body"><div class="brand-clean">東京ガス</div><div class="brand-clean">大阪ガス</div><div class="brand-clean">ニチガス</div></div></div><div class="brand-card water"><div class="brand-head">💧 ウォーターサーバー</div><div class="brand-body"><div class="brand-clean">PREMIUM WATER</div><div class="brand-clean">プレミアムウォーター</div></div></div></div></div></section>
 
 <section><div class="wrap"><h2 class="title">まとめてお申込みで、最大50,000円</h2><p class="sub">対象サービスのお申込み件数に応じて、キャッシュバック額がアップします。</p><div class="cash"><div>1件お申込みで<strong>5,000円</strong></div><div>2件お申込みで<strong>25,000円</strong></div><div>3件以上お申込みで<strong>50,000円</strong></div></div><div class="note">東京ガス・大阪ガス・東邦ガスの「電気＋ガスセット」は1件分となります。</div></div></section>
 
