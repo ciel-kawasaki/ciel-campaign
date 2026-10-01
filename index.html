@@ -13,44 +13,25 @@
 .contact{text-align:center;background:#fff}.tel{display:block;color:var(--red);text-decoration:none;font-weight:900;font-size:clamp(39px,6vw,57px)}footer{text-align:center;padding:26px;color:#62778d;font-size:13px}
 @media(max-width:760px){.netflow,.uses,.cash{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.sub{text-align:left}.hero{padding-top:45px}}
 
-.logo-section{padding:52px 0;background:#eef7ff}
-.logo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.logo-card{background:#fff;border:1px solid #d5e0eb;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(18,61,107,.08)}
-.logo-head{padding:15px 17px;color:#fff;font-size:19px;font-weight:900;white-space:nowrap}
-.net .logo-head{background:#147cc3}.elec .logo-head{background:#ff7818}.gas .logo-head{background:#178d34}.water .logo-head{background:#2392c2}
-.logo-body{padding:12px 14px;min-height:430px}
-.logo-row{min-height:58px;display:grid;grid-template-columns:minmax(0,1fr) 94px;align-items:center;gap:7px;border-bottom:1px dotted #ced8e1}
-.logo-row:last-child{border-bottom:0}
-.logo-row img{display:block;width:100%;height:48px;object-fit:contain;background:#fff}
-.logo-row span{font-size:12px;font-weight:800;color:#263b50;text-align:right;line-height:1.2;word-break:keep-all}
-.water .logo-row{grid-template-columns:1fr}.water .logo-row span{text-align:center;font-size:14px}
-@media(max-width:900px){.logo-grid{grid-template-columns:1fr 1fr}.logo-body{min-height:auto}}
-@media(max-width:560px){.logo-grid{grid-template-columns:1fr}.logo-body{min-height:auto}.logo-row{grid-template-columns:minmax(0,1fr) 120px}}
-
-/* LARGE LOGO OVERRIDE */
-.logo-body{padding:12px 16px;min-height:430px}
-.logo-row{
-  min-height:62px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-bottom:1px dotted #ced8e1;
-  padding:3px 0;
-}
-.logo-row img{
-  width:92%;
-  height:54px;
-  object-fit:contain;
-  display:block;
-  background:#fff;
-}
-.logo-row span{display:none}
-.water .logo-row img{width:95%;height:72px}
-@media(max-width:900px){
-  .logo-row{min-height:72px}
-  .logo-row img{width:88%;height:62px}
-  .water .logo-row img{height:78px}
-}
+.brand-section{padding:52px 0;background:#eef7ff}
+.brand-grid{display:grid;grid-template-columns:1.08fr 1.08fr 1fr 1fr;gap:14px;align-items:stretch}
+.brand-card{background:#fff;border:1px solid #d5e0eb;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(18,61,107,.08)}
+.brand-head{padding:15px 17px;color:#fff;font-size:20px;font-weight:900;white-space:nowrap}
+.net .brand-head{background:#147cc3}.elec .brand-head{background:#ff7818}.gas .brand-head{background:#178d34}.water .brand-head{background:#2392c2}
+.brand-body{padding:8px 14px;min-height:505px}
+.brand-row{display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:2px dotted #d6dde3;padding:6px 4px;gap:4px}
+.brand-row:last-child{border-bottom:0}
+.brand-row img{display:block;width:auto;height:auto;max-width:94%;object-fit:contain}
+.brand-row div{text-align:center;font-weight:800;color:#263b50;line-height:1.15}
+.net .brand-row{min-height:78px}.net .brand-row img{max-height:49px}.net .brand-row div{font-size:13px}
+.elec .brand-row{min-height:67px}.elec .brand-row img{max-height:42px}.elec .brand-row div{font-size:12px}
+.gas .brand-row{min-height:155px}.gas .brand-row img{max-height:82px}.gas .brand-row div{font-size:16px}
+.water-body{min-height:505px;padding:28px 18px 12px;display:flex;flex-direction:column;align-items:center}
+.premium-logo{display:block;width:88%;max-height:66px;object-fit:contain}
+.water-name{margin-top:10px;font-size:16px;font-weight:800;color:#263b50}
+.water-photo{margin-top:auto;width:100%;height:270px;object-fit:cover;object-position:center;border-radius:0 0 12px 12px}
+@media(max-width:900px){.brand-grid{grid-template-columns:1fr 1fr}.brand-body,.water-body{min-height:auto}}
+@media(max-width:560px){.brand-grid{grid-template-columns:1fr}.brand-row img{max-width:88%}.gas .brand-row{min-height:125px}.water-photo{height:240px}}
 </style></head><body>
 <section class="hero"><div class="wrap"><span class="pill">シエル川崎店 ご成約者様限定</span><h1>新居のネット回線、<br><span class="red">物件に合わせて選べます。</span></h1><p class="lead">「この部屋ではどの回線が使える？」から確認。<br>ご希望の通信速度や使い方に合わせて、利用可能なインターネット回線をご提案します。</p></div></section>
 
@@ -60,10 +41,16 @@
 <section class="use"><div class="wrap"><h2 class="title">使い方に合わせてご相談できます</h2><div class="uses"><div class="usecard"><div class="e">🎬</div><b>動画・SNS中心</b><span>日常利用に合った通信環境を相談</span></div><div class="usecard"><div class="e">💻</div><b>在宅ワーク・オンライン会議</b><span>速度だけでなく安定性も重視</span></div><div class="usecard"><div class="e">🎮</div><b>オンラインゲーム・配信</b><span>高速通信・低遅延を重視して相談</span></div></div>
 <div class="life-bridge"><h3>さらに、電気・ガスなどのライフラインもまとめて。</h3><p>ネット回線だけでなく、新生活に必要な電気・ガス・ウォーターサーバーなどもあわせてご案内します。</p></div></div></section>
 
-<section class="logo-section"><div class="wrap">
+<section class="brand-section"><div class="wrap">
 <h2 class="title">対象サービス</h2>
 <p class="sub">下記の提携サービスのお申し込みで、キャッシュバックの対象となります。</p>
-<div class="logo-grid"><div class="logo-card net"><div class="logo-head">🌐 インターネット</div><div class="logo-body"><div class="logo-row"><img src="images/logos/softbank.jpg" alt="SoftBank 光 / Air"><span>SoftBank 光 / Air</span></div><div class="logo-row"><img src="images/logos/au_hikari.jpg" alt="auひかり"><span>auひかり</span></div><div class="logo-row"><img src="images/logos/docomo.jpg" alt="ドコモ光"><span>ドコモ光</span></div><div class="logo-row"><img src="images/logos/biglobe.jpg" alt="BIGLOBE光"><span>BIGLOBE光</span></div><div class="logo-row"><img src="images/logos/nifty.jpg" alt="@nifty光"><span>@nifty光</span></div><div class="logo-row"><img src="images/logos/jcom.jpg" alt="J:COM"><span>J:COM</span></div></div></div><div class="logo-card elec"><div class="logo-head">💡 電気</div><div class="logo-body"><div class="logo-row"><img src="images/logos/tepco.jpg" alt="東京電力"><span>東京電力</span></div><div class="logo-row"><img src="images/logos/kansai.jpg" alt="関西電力"><span>関西電力</span></div><div class="logo-row"><img src="images/logos/kuracy.jpg" alt="Kuracyでんき"><span>Kuracyでんき</span></div><div class="logo-row"><img src="images/logos/au_denki.jpg" alt="auでんき"><span>auでんき</span></div><div class="logo-row"><img src="images/logos/htb.jpg" alt="HTBエナジー"><span>HTBエナジー</span></div><div class="logo-row"><img src="images/logos/looop.jpg" alt="Looopでんき"><span>Looopでんき</span></div><div class="logo-row"><img src="images/logos/octopus.jpg" alt="オクトパスエナジー"><span>オクトパスエナジー</span></div></div></div><div class="logo-card gas"><div class="logo-head">🔥 ガス</div><div class="logo-body"><div class="logo-row"><img src="images/logos/tokyogas.jpg" alt="東京ガス"><span>東京ガス</span></div><div class="logo-row"><img src="images/logos/osakagas.jpg" alt="大阪ガス"><span>大阪ガス</span></div><div class="logo-row"><img src="images/logos/nichigas.jpg" alt="ニチガス"><span>ニチガス</span></div></div></div><div class="logo-card water"><div class="logo-head">💧 ウォーターサーバー</div><div class="logo-body"><div class="logo-row"><img src="images/logos/premium.jpg" alt="プレミアムウォーター"><span>プレミアムウォーター</span></div></div></div></div>
+<div class="brand-grid"><div class="brand-card net"><div class="brand-head">🌐 インターネット</div><div class="brand-body"><div class="brand-row"><img src="images/logos/softbank.jpg" alt="ソフトバンク光 / Air"><div>ソフトバンク光 / Air</div></div><div class="brand-row"><img src="images/logos/au_hikari.jpg" alt="auひかり"><div>auひかり</div></div><div class="brand-row"><img src="images/logos/docomo.jpg" alt="ドコモ光"><div>ドコモ光</div></div><div class="brand-row"><img src="images/logos/biglobe.jpg" alt="ビッグローブ光"><div>ビッグローブ光</div></div><div class="brand-row"><img src="images/logos/nifty.jpg" alt="@nifty光"><div>@nifty光</div></div><div class="brand-row"><img src="images/logos/jcom.jpg" alt="J:COM NET"><div>J:COM NET</div></div></div></div><div class="brand-card elec"><div class="brand-head">💡 電気</div><div class="brand-body"><div class="brand-row"><img src="images/logos/tepco.jpg" alt="東京電力エナジーパートナー"><div>東京電力エナジーパートナー</div></div><div class="brand-row"><img src="images/logos/kansai.jpg" alt="関西電力"><div>関西電力</div></div><div class="brand-row"><img src="images/logos/kuracy.jpg" alt="Kuracyでんき"><div>Kuracyでんき</div></div><div class="brand-row"><img src="images/logos/au_denki.jpg" alt="auでんき"><div>auでんき</div></div><div class="brand-row"><img src="images/logos/htb.jpg" alt="HTBエナジー"><div>HTBエナジー</div></div><div class="brand-row"><img src="images/logos/looop.jpg" alt="Looopでんき"><div>Looopでんき</div></div><div class="brand-row"><img src="images/logos/octopus.jpg" alt="オクトパスエナジー"><div>オクトパスエナジー</div></div></div></div><div class="brand-card gas"><div class="brand-head">🔥 ガス</div><div class="brand-body"><div class="brand-row"><img src="images/logos/tokyogas.jpg" alt="東京ガス"><div>東京ガス</div></div><div class="brand-row"><img src="images/logos/osakagas.jpg" alt="大阪ガス"><div>大阪ガス</div></div><div class="brand-row"><img src="images/logos/nichigas.jpg" alt="ニチガス"><div>ニチガス</div></div></div></div><div class="brand-card water">
+<div class="brand-head">💧 ウォーターサーバー</div>
+<div class="water-body">
+<img class="premium-logo" src="images/logos/premium.jpg" alt="PREMIUM WATER">
+<div class="water-name">プレミアムウォーター</div>
+<img class="water-photo" src="images/premium-water-splash.jpg" alt="水のイメージ">
+</div></div></div>
 </div></section>
 
 <section><div class="wrap"><h2 class="title">まとめてお申込みで、最大50,000円</h2><p class="sub">対象サービスのお申込み件数に応じて、キャッシュバック額がアップします。</p><div class="cash"><div>1件お申込みで<strong>5,000円</strong></div><div>2件お申込みで<strong>25,000円</strong></div><div>3件以上お申込みで<strong>50,000円</strong></div></div><div class="note">東京ガス・大阪ガス・東邦ガスの「電気＋ガスセット」は1件分となります。</div></div></section>
