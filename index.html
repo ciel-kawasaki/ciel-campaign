@@ -13,20 +13,24 @@ section{padding:48px 0}.title{text-align:center;color:var(--navy);font-size:clam
 footer{text-align:center;padding:25px;color:#60738a;font-size:13px}
 @media(max-width:900px){.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cash,.services{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.logo{height:66px}.inside{padding-left:25px;padding-right:25px}}
+
+.services-fixed{padding:0;background:#f2f8ff}
+.services-fixed-inner{width:min(1400px,100%);margin:0 auto}
+.services-fixed img{display:block;width:100%;height:auto;margin:0 auto}
+@media(max-width:700px){
+ .services-fixed-inner{width:100%;overflow:hidden}
+ .services-fixed img{width:100%;height:auto}
+}
+
 </style></head>
 <body>
 <section class="hero"><div class="wrap"><span class="pill">シエル川崎店 ご成約者様限定</span><h1><span class="red">新生活応援</span><br>キャッシュバックキャンペーン</h1><p>対象サービスのお申込み件数に応じて<br><span class="red">最大50,000円キャッシュバック！</span></p></div></section>
 <section><div class="wrap"><h2 class="title">キャッシュバック額</h2><div class="cash"><div>1件お申込みで<strong>5,000円</strong></div><div>2件お申込みで<strong>25,000円</strong></div><div>3件以上お申込みで<strong>50,000円</strong></div></div><div class="notice">東京ガス・大阪ガス・東邦ガスの「電気＋ガスセット」は <span class="red">1件分</span> となります。</div></div></section>
-<section><div class="wrap"><h2 class="title">対象サービス</h2><p class="subtitle">下記の提携サービスのお申し込みで、キャッシュバックの対象となります。</p>
-<div class="services">
-<div class="service internet"><h3>🌐 インターネット</h3><div class="inside">
-<div class="logo"><img src="images/softbank.jpg" alt="SoftBank 光 / Air"></div><div class="logo"><img src="images/au-hikari.jpg" alt="auひかり"></div><div class="logo"><img src="images/docomo.jpg" alt="ドコモ光"></div><div class="logo"><img src="images/biglobe.jpg" alt="BIGLOBE光"></div><div class="logo"><img src="images/nifty.jpg" alt="@nifty光"></div><div class="logo"><img src="images/jcom.jpg" alt="J:COM"></div></div></div>
-<div class="service electric"><h3>💡 電気</h3><div class="inside">
-<div class="logo"><img src="images/tepco.jpg" alt="東京電力"></div><div class="logo"><img src="images/kansai.jpg" alt="関西電力"></div><div class="logo"><img src="images/kuracy.jpg" alt="Kuracyでんき"></div><div class="logo"><img src="images/au-denki.jpg" alt="auでんき"></div><div class="logo"><img src="images/htb.jpg" alt="HTBエナジー"></div><div class="logo"><img src="images/looop.jpg" alt="Looopでんき"></div><div class="logo"><img src="images/octopus.jpg" alt="オクトパスエナジー"></div></div></div>
-<div class="service gas"><h3>🔥 ガス</h3><div class="inside">
-<div class="logo"><img src="images/tokyogas.jpg" alt="東京ガス"></div><div class="logo"><img src="images/osakagas.jpg" alt="大阪ガス"></div><div class="logo"><img src="images/nichigas.jpg" alt="ニチガス"></div></div></div>
-<div class="service water"><h3>💧 ウォーターサーバー</h3><div class="inside"><div class="logo"><img src="images/premiumwater.jpg" alt="プレミアムウォーター"></div><p style="text-align:center">プレミアムウォーター</p></div></div>
-</div></div></section>
+<section class="services-fixed">
+  <div class="services-fixed-inner">
+    <img src="images/target-services.jpg" alt="対象サービス一覧">
+  </div>
+</section>
 <section class="flow"><div class="wrap"><h2 class="title">お申込みの流れ</h2><div class="steps"><div class="step"><div class="n">1</div><h3>対象サービスを確認</h3></div><div class="step"><div class="n">2</div><h3>サービスをご案内</h3></div><div class="step"><div class="n">3</div><h3>ご希望サービスを申込み</h3></div><div class="step"><div class="n">4</div><h3>条件達成後キャッシュバック</h3></div></div></div></section>
 <section class="contact"><div class="wrap"><h2>各種お申込みのご案内・確認</h2><strong>株式会社シグナストラスト カスタマーサポート</strong><br><a href="tel:0120944801">☎ 0120-944-801</a><p>ご案内・確認のため、お電話をさせていただく場合がございます。</p></div></section>
 <footer>シエル川崎店 ご成約者様限定キャンペーン<br>※対象サービス・適用条件の詳細はご案内時にご確認ください。</footer>
